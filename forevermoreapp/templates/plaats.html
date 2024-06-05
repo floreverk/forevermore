@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'templates/place.css' %}">    
+    <title>{{ naam | safe }}</title>
+</head>
+<body>
+    {% load static %}
+    <h1>{{ naam | safe }}</h1>
+    {% for image in image_list %}
+    <li>{% load static %}
+    <img src="{% static image %}"></li>
+    {% endfor %}
+</body>
+</html>
