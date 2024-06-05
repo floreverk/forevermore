@@ -76,3 +76,4 @@ def AncreBritishCemetery (request):
         image_list.append(pad)
     context = {'image_list': image_list, 'naam':naam}
     return render(request, 'plaats.html', context)
+
